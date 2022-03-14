@@ -129,7 +129,7 @@ function Landing() {
                         <div style={{position:"relative",margin:"10% auto",width:"70%",marginBottom:"10%"}} className="lcr-buttonContainer">
                             <div style={{marginBottom:"30px"}}>
                                 {headerData.resumePdf && (
-                                <a href="https://drive.google.com/file/d/10XHL15qcNMkzHRTn2zQwFvanCQco7c3j/view?usp=sharing" download="resume" target="_blank" rel="noreferrer">
+                                <a href="https://drive.google.com/file/d/1mNKN55Le78ihGb-MXLaprjr79FD9Y4D_/view?usp=sharing" download="resume" target="_blank" rel="noreferrer">
                                    
                                     <Button className={classes.resumeBtn}>Download CV</Button>
                                     
