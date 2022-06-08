@@ -1,4 +1,9 @@
-
+import youtube from "../assets/projectImages/youtube.PNG"
+import amazonPNG from "../assets/projectImages/amazonPNG.PNG"
+import instagram from "../assets/projectImages/instagram.PNG"
+import leadiq from "../assets/projectImages/leadiq.PNG"
+import urbanLadder from "../assets/projectImages/urbanLadder.PNG"
+import myntra from "../assets/projectImages/myntra.PNG"
 export const projectsData = [
 
     {
@@ -9,7 +14,7 @@ export const projectsData = [
          logos: ["fab fa-html5", "fab fa-css3", "fab fa-js","fab fa-etsy",],
         code: 'https://github.com/rajachoudhary/Youtube_Music',
         demo: 'https://yt-music-masters.netlify.app/',
-        image: "https://i.ibb.co/0YxmMYD/Screenshot-230.png"
+        image: youtube
     },
     {
         id: 2,
@@ -19,7 +24,7 @@ export const projectsData = [
         logos: ["fab fa-react", "fab fa-js", "fab fa-bootstrap",],
         code: 'https://github.com/skbhoi2001/Instagram_clone',
         demo: 'https://instaclonesrc.netlify.app/',
-        image: "https://github.com/skbhoi2001/Instagram_clone/raw/main/instagram_clone/images/home.png?raw=true"
+        image: instagram
     },
     {
         id: 3,
@@ -29,7 +34,37 @@ export const projectsData = [
          logos: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
         code: 'https://github.com/rajachoudhary/Cobalt',
         demo: 'https://elastic-yalow-d2797d.netlify.app',
-        image: "https://i.ibb.co/jwKPWK2/Screenshot-229.png"
+        image: leadiq
+    },
+    {
+        id: 4,
+        projectName: 'Urban-Ladder',
+        projectDesc: 'LeadIQ eliminates the most annoying parts of prospecting, helping sales reps get new deals with less work.',
+        tags: ["Html", "css", "javascript"],
+         logos: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
+        code: 'https://github.com/rajachoudhary/Cobalt',
+        demo: 'https://elastic-yalow-d2797d.netlify.app',
+        image: urbanLadder
+    },
+    {
+        id: 5,
+        projectName: 'Amazon',
+        projectDesc: 'LeadIQ eliminates the most annoying parts of prospecting, helping sales reps get new deals with less work.',
+        tags: ["Html", "css", "javascript"],
+         logos: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
+        code: 'https://github.com/rajachoudhary/Cobalt',
+        demo: 'https://elastic-yalow-d2797d.netlify.app',
+        image: amazonPNG 
+    },
+    {
+        id: 6,
+        projectName: 'Myntra',
+        projectDesc: 'LeadIQ eliminates the most annoying parts of prospecting, helping sales reps get new deals with less work.',
+        tags: ["Html", "css", "javascript"],
+         logos: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
+        code: 'https://github.com/rajachoudhary/Cobalt',
+        demo: 'https://elastic-yalow-d2797d.netlify.app',
+        image: myntra
     },
     
 ]

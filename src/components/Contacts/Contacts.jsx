@@ -229,23 +229,23 @@ function Contacts() {
                     </div>
 
                     <div className="contacts-details">
-                        <a  href={`mailto:${contactsData.email}`} className="personal-details">
-                            <div className={classes.detailsIcon}>
+                        <a style={{width:"370px",marginRight:"0"}} href={`mailto:${contactsData.email}`} className="personal-details">
+                            <div className={classes.detailsIcon} >
                                 <FiAtSign />
                             </div>
-                            <p style={{color:theme.tertiary}}>{contactsData.email}</p>
+                            <p style={{color:theme.tertiary,width:"300px"}} >{contactsData.email}</p>
                         </a>
-                        <a href={`tel:${contactsData.phone}`} className="personal-details">
+                        <a href={`tel:${contactsData.phone}`} style={{width:"200px"}} className="personal-details">
                             <div className={classes.detailsIcon}>
                                 <FiPhone/> 
                             </div>
-                            <p style={{color:theme.tertiary}}>{contactsData.phone}</p>
+                            <p style={{color:theme.tertiary,width:"120px"}}>{contactsData.phone}</p>
                         </a>
-                        <div className="personal-details">
+                        <div className="personal-details" style={{width:"250px"}}>
                             <div className={classes.detailsIcon}>
                                 <HiOutlineLocationMarker />
                             </div>
-                            <p style={{color:theme.tertiary}}>{contactsData.address}</p>
+                            <p style={{color:theme.tertiary,width:"250px"}}>{contactsData.address}</p>
                         </div>
 
                         <div className="socialmedia-icons">
