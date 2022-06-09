@@ -5,16 +5,15 @@ import leadiq from "../assets/projectImages/leadiq.PNG"
 import urbanLadder from "../assets/projectImages/urbanLadder.PNG"
 import myntra from "../assets/projectImages/myntra.PNG"
 export const projectsData = [
-
     {
-        id: 1,
-        projectName: 'YouTube Music',
-        projectDesc: 'YouTube Music is a music streaming service developed by YouTube, in which you can listen all your favourite music.',
-        tags: ["Html","Javascript", "MongoDB","Bootstrap"],
-         logos: ["fab fa-html5","fab fa-js","fab fa-bootstrap",],
-        code: 'https://github.com/rajachoudhary/Youtube_Music',
-        demo: 'https://yt-music-masters.netlify.app/',
-        image: youtube
+        id: 6,
+        projectName: 'Myntra',
+        projectDesc: 'Online Shopping Site for Fashion & Lifestyle in India.',
+        tags: ["React", "Redux", "Ant Design"],
+         logos: ["fab fa-react", "SiRedux", "AiOutlineAntDesign"],
+        code: 'https://github.com/rajachoudhary/Myntra_clone',
+        demo: 'https://raja-myntra-clone.netlify.app/',
+        image: myntra
     },
     {
         id: 2,
@@ -27,14 +26,14 @@ export const projectsData = [
         image: instagram
     },
     {
-        id: 3,
-        projectName: 'LeadiQ',
-        projectDesc: 'LeadIQ eliminates the most annoying parts of prospecting, helping sales reps get new deals with less work.',
-        tags: ["Html", "css", "javascript"],
-         logos: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
-        code: 'https://github.com/rajachoudhary/Cobalt',
-        demo: 'https://elastic-yalow-d2797d.netlify.app',
-        image: leadiq
+        id: 1,
+        projectName: 'YouTube Music',
+        projectDesc: 'YouTube Music is a music streaming service developed by YouTube, in which you can listen all your favourite music.',
+        tags: ["Html","Javascript", "MongoDB","Bootstrap"],
+         logos: ["fab fa-html5","fab fa-js","fab fa-bootstrap",],
+        code: 'https://github.com/rajachoudhary/Youtube_Music',
+        demo: 'https://yt-music-masters.netlify.app/',
+        image: youtube
     },
     {
         id: 4,
@@ -57,15 +56,18 @@ export const projectsData = [
         image: amazonPNG 
     },
     {
-        id: 6,
-        projectName: 'Myntra',
-        projectDesc: 'Online Shopping Site for Fashion & Lifestyle in India.',
-        tags: ["React", "Redux", "Ant Design"],
-         logos: ["fab fa-react", "SiRedux", "AiOutlineAntDesign"],
-        code: 'https://github.com/rajachoudhary/Myntra_clone',
-        demo: 'https://raja-myntra-clone.netlify.app/',
-        image: myntra
+        id: 3,
+        projectName: 'LeadiQ',
+        projectDesc: 'LeadIQ eliminates the most annoying parts of prospecting, helping sales reps get new deals with less work.',
+        tags: ["Html", "css", "javascript"],
+         logos: ["fab fa-html5", "fab fa-css3", "fab fa-js"],
+        code: 'https://github.com/rajachoudhary/Cobalt',
+        demo: 'https://elastic-yalow-d2797d.netlify.app',
+        image: leadiq
     },
+    
+    
+   
     
 ]
 
