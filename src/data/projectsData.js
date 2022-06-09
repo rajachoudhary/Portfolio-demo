@@ -1,5 +1,5 @@
 import youtube from "../assets/projectImages/youtube.PNG"
-import amazonPNG from "../assets/projectImages/amazonPNG.PNG"
+import amazon from "../assets/projectImages/amazon.PNG"
 import instagram from "../assets/projectImages/instagram.PNG"
 import leadiq from "../assets/projectImages/leadiq.PNG"
 import urbanLadder from "../assets/projectImages/urbanLadder.PNG"
@@ -35,6 +35,8 @@ export const projectsData = [
         demo: 'https://yt-music-masters.netlify.app/',
         image: youtube
     },
+   
+   
     {
         id: 4,
         projectName: 'Urban-Ladder',
@@ -53,7 +55,7 @@ export const projectsData = [
          logos: ["fab fa-react", "SiRedux", "SiMaterialui"],
         code: 'https://github.com/rajachoudhary/Amazon-clone',
         demo: 'https://amazonclonerass.netlify.app/',
-        image: amazonPNG 
+        image: amazon
     },
     {
         id: 3,
@@ -65,8 +67,6 @@ export const projectsData = [
         demo: 'https://elastic-yalow-d2797d.netlify.app',
         image: leadiq
     },
-    
-    
    
     
 ]
