@@ -120,56 +120,56 @@ function Contacts() {
 
     const classes = useStyles();
 
-    const handleContactForm = (e) => {
-        e.preventDefault()
+    // const handleContactForm = (e) => {
+    //     e.preventDefault()
 
-        if(name && email && message) {
-            if(isEmail(email)) {
-                const responseData = {
-                    name: name,
-                    email: email,
-                    message: message
-                }
+    //     if(name && email && message) {
+    //         if(isEmail(email)) {
+    //             const responseData = {
+    //                 name: name,
+    //                 email: email,
+    //                 message: message
+    //             }
             
-            //email sections
+    //         //email sections
                 
-                emailjs.send('service_7mwrpfp','template_5jlde4m', responseData, 'user_BXHJ6DmhAdrMyslj668Q1')
-                .then((response) => {
-                    console.log('SUCCESS!', response.status, response.text);
-                    setSuccess(true)
-                        setErrMsg('')
-                        setName("");
-                        setEmail("");
-                        setMessage("")
-                        setOpen(false)
-                }, (err) => {
-                console.log('FAILED...', err);
-                });
+    //             emailjs.send('service_7mwrpfp','template_5jlde4m', responseData, 'user_BXHJ6DmhAdrMyslj668Q1')
+    //             .then((response) => {
+    //                 console.log('SUCCESS!', response.status, response.text);
+    //                 setSuccess(true)
+    //                     setErrMsg('')
+    //                     setName("");
+    //                     setEmail("");
+    //                     setMessage("")
+    //                     setOpen(false)
+    //             }, (err) => {
+    //             console.log('FAILED...', err);
+    //             });
                 
-                // axios.post(contactsData.sheetAPI, responseData)
-                //     .then(res => {
-                //         console.log('success')
-                //         setSuccess(true)
-                //         setErrMsg('')
+    //             // axios.post(contactsData.sheetAPI, responseData)
+    //             //     .then(res => {
+    //             //         console.log('success')
+    //             //         setSuccess(true)
+    //             //         setErrMsg('')
 
-                //         setName("");
-                //         setEmail("");
-                //         setMessage("")
-                //         setOpen(false)
-                //     })
-            } else {
-                setErrMsg('Invalid email')
-                setOpen(true)
-            }
+    //             //         setName("");
+    //             //         setEmail("");
+    //             //         setMessage("")
+    //             //         setOpen(false)
+    //             //     })
+    //         } else {
+    //             setErrMsg('Invalid email')
+    //             setOpen(true)
+    //         }
 
-            //email sections
+    //         //email sections
             
-        } else {
-            setErrMsg('Enter all the fields')
-            setOpen(true)
-        }
+    //     } else {
+    //         setErrMsg('Enter all the fields')
+    //         setOpen(true)
+    //     }
 
-    }
+    // }
     
     return (
         <div className="contacts" id="contacts" style={{backgroundColor: theme.secondary}}>
@@ -177,23 +177,23 @@ function Contacts() {
                 <h1 style={{color: theme.primary}}>Contacts</h1>
                 <div className="contacts-body">
                     <div className="contacts-form">
-                        <form onSubmit={handleContactForm}>
+                        <form action="https://formsubmit.co/rajachoudhary341@gmail.com" method="POST">
                             <div className="input-container">
                                 <label htmlFor="Name"  className={classes.label}>Name</label>
-                                <input placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
+                                <input required placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
                                 <label htmlFor="Email"  className={classes.label}>Email</label>
-                                <input placeholder="name@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
+                                <input required placeholder="name@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
                                 <label htmlFor="Message"  className={classes.label}>Message</label>
-                                <textarea placeholder="Type your message...." value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
+                                <textarea  required placeholder="Type your message...." value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
                             </div>
 
                             <div className="submit-btn" >
                                 <button type="submit" className={classes.submitBtn} >
-                                    <p style={{marginTop:"15%"}}>{!success ? 'Send' : 'Sent'}</p>
+                                    <p style={{marginTop:"15%"}}>Send</p>
                                     <div className="submit-icon">
                                         <AiOutlineSend className="send-icon" style={{animation: !success ? 'initial' : 'fly 0.8s linear both', position: success ? 'absolute' : 'initial'}}/>
                                         <AiOutlineCheckCircle className="success-icon" style={{display: !success ? 'none' : 'inline-flex', opacity: !success ? '0': '1'}}/>
